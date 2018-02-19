@@ -1,3 +1,4 @@
+@import url(bootstrap.min.css);
 @font-face {
   font-family: 'plakette_serial-regular';
   src: url("../plakette_serial-regular-webfont.woff2") format("woff2"), url("../plakette_serial-regular-webfont.woff") format("woff");
@@ -90,7 +91,7 @@ footer ul {
   position: absolute;
   height: 150px;
   background-size: 150px 150px;
-  bottom: 0px;
+  bottom: -1px;
   left: 0px;
   z-index: 2;
 }
@@ -101,8 +102,8 @@ footer ul {
   position: absolute;
   height: 250px;
   background-size: 250px 250px;
-  top: 0px;
-  right: -5px;
+  top: -1px;
+  right: 0px;
 }
 
 .corner {
@@ -115,8 +116,8 @@ footer ul {
   position: absolute;
   height: 100px;
   background-size: 100px;
-  top: 0px;
-  right: -5px;
+  top: -1px;
+  right: 0px;
 }
 .corner-white:after {
   background-image: url(../svg/small-corner.svg);
@@ -125,7 +126,7 @@ footer ul {
   position: absolute;
   height: 100px;
   background-size: 100px;
-  top: 0px;
+  top: -1px;
   right: -5px;
 }
 
@@ -182,6 +183,15 @@ footer ul {
   left: 0;
   right: 0;
 }
+.hero-block.mobile-caption {
+  position: relative;
+  bottom: initial;
+  width: 100%;
+  padding: initial;
+}
+.hero-block.mobile-caption h2 {
+  font-size: 3em;
+}
 
 input.form-control {
   border: 2px #8FA6D6 solid;
@@ -191,5 +201,31 @@ input.form-control:focus {
   border-color: #8FA6D6;
   box-shadow: 0 0 0 0.2rem rgba(61, 96, 172, 0.8);
 }
+
+@media (max-width: 576px) {
+  .hero-header {
+    height: 50vh;
+  }
+
+  h2 {
+    font-size: 6em;
+  }
+  h2 img {
+    margin-top: -15px;
+    margin-left: -20px;
+    width: 35px;
+    height: 70px;
+  }
+}
+/*
+.card-columns {
+  @include media-breakpoint-only(sm) {
+    column-count: 1;
+  }
+  @include media-breakpoint-only(md) {
+    column-count: 2;
+  }
+}
+*/
 
 /*# sourceMappingURL=main.css.map */
