@@ -55,6 +55,29 @@ $brand-color-dark: #041B4B;
         height: 250px;
         background-size: 250px 250px;
         top: 0px;
-        right: 0px;
+        right: -5px;
+    }
+}
+.corner {
+    position:relative;
+    &-blue:after {
+        background-image: url(../svg/small-corner-blue.svg);
+        content: '';
+        width: 100px;
+        position: absolute;
+        height: 100px;
+        background-size: 100px;
+        top: 0px;
+        right: -5px;
+    }
+    &-white:after {
+        background-image: url(../svg/small-corner.svg);
+        content: '';
+        width: 100px;
+        position: absolute;
+        height: 100px;
+        background-size: 100px;
+        top: 0px;
+        right: -5px;
     }
 }
