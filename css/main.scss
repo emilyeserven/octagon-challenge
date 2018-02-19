@@ -11,7 +11,9 @@ $brand-font: 'plakette_serial-regular', sans-serif;
 
 $secondary-font: 'Fira Sans', sans-serif;
 
+$brand-color-light: #8FA6D6;
 $brand-color-dark: #041B4B;
+$brand-color-opacity: rgba(61, 96, 172, .8);
 
 h2 {
     font-family: $brand-font;
@@ -55,6 +57,31 @@ h5 {
             margin-right: -15px;
             height: .72em;
         }
+    }
+}
+.footer {
+    &-brand {
+        font-family: $brand-font;
+        font-size: 2.5em;
+        text-transform: uppercase;
+        line-height: .8;
+        letter-spacing: 2px;
+        color: #fff;
+        &:hover {
+            text-decoration:none;
+            color: #fff;
+        }
+        img {
+            margin-right: -5px;
+        }
+    }
+}
+footer {
+    svg {
+        color: #fff;
+    }
+    ul {
+        list-style-type: square;
     }
 }
 .bg {
@@ -147,12 +174,19 @@ h5 {
 }
 .hero {
     &-header {
-        background-image: url('../img/hero.jpg');
+        background-image: url('../img/herosub.jpg');
         background-position: center;
+        background-size:cover;
         height: 70vh;
     }
+    &-header.subpage {
+        background-image: url('../img/hero.jpg');
+        background-position: center;
+        background-size:cover;
+        height: 50vh;
+    }
     &-block {
-        background-color: rgba(61, 96, 172, .8);
+        background-color: $brand-color-opacity;
         padding: 1em 2em;
         width: 70%;
         margin: auto;
@@ -161,5 +195,13 @@ h5 {
         z-index: 1;
         left: 0;
         right: 0;
+    }
+}
+input.form-control {
+    border: 2px $brand-color-light solid;
+    border-radius: 0;
+    &:focus {
+        border-color: $brand-color-light;
+        box-shadow: 0 0 0 0.2rem $brand-color-opacity;
     }
 }

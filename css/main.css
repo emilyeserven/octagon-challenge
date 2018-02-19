@@ -50,6 +50,29 @@ h5 {
   height: .72em;
 }
 
+.footer-brand {
+  font-family: "plakette_serial-regular", sans-serif;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  line-height: .8;
+  letter-spacing: 2px;
+  color: #fff;
+}
+.footer-brand:hover {
+  text-decoration: none;
+  color: #fff;
+}
+.footer-brand img {
+  margin-right: -5px;
+}
+
+footer svg {
+  color: #fff;
+}
+footer ul {
+  list-style-type: square;
+}
+
 .bg-brand {
   background-color: #3D60AC;
 }
@@ -137,9 +160,16 @@ h5 {
 }
 
 .hero-header {
+  background-image: url("../img/herosub.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+}
+.hero-header.subpage {
   background-image: url("../img/hero.jpg");
   background-position: center;
-  height: 70vh;
+  background-size: cover;
+  height: 50vh;
 }
 .hero-block {
   background-color: rgba(61, 96, 172, 0.8);
@@ -151,6 +181,15 @@ h5 {
   z-index: 1;
   left: 0;
   right: 0;
+}
+
+input.form-control {
+  border: 2px #8FA6D6 solid;
+  border-radius: 0;
+}
+input.form-control:focus {
+  border-color: #8FA6D6;
+  box-shadow: 0 0 0 0.2rem rgba(61, 96, 172, 0.8);
 }
 
 /*# sourceMappingURL=main.css.map */
