@@ -30,6 +30,10 @@ h3 {
   font-weight: 500;
 }
 
+h5 {
+  font-family: "Fira Sans", sans-serif;
+}
+
 .navbar {
   background-color: #3D60AC;
   color: #fff;
