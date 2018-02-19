@@ -65,6 +65,7 @@ h3 {
   background-size: 150px 150px;
   bottom: 0px;
   left: 0px;
+  z-index: 2;
 }
 .jumbotron:after {
   background-image: url(../svg/corner-blue.svg);
@@ -99,6 +100,53 @@ h3 {
   background-size: 100px;
   top: 0px;
   right: -5px;
+}
+
+.btn-light {
+  color: #fff;
+  font-family: "Fira Sans", sans-serif;
+  border: 2px #fff solid;
+  background-color: #3D60AC !important;
+  border-radius: 0;
+}
+.btn-light:hover {
+  background-color: #fff !important;
+  color: #3D60AC;
+  border-color: #fff;
+}
+.btn-outline-light {
+  border-radius: 0;
+  border-width: 2px;
+  font-family: "Fira Sans", sans-serif;
+}
+.btn-primary {
+  color: #3D60AC;
+  font-family: "Fira Sans", sans-serif;
+  border: 2px #3D60AC solid;
+  background-color: #fff !important;
+  border-radius: 0;
+}
+.btn-primary:hover {
+  background-color: #3D60AC !important;
+  color: #fff;
+  border-color: #3D60AC;
+}
+
+.hero-header {
+  background-image: url("../img/hero.jpg");
+  background-position: center;
+  height: 70vh;
+}
+.hero-block {
+  background-color: rgba(61, 96, 172, 0.8);
+  padding: 1em 2em;
+  width: 70%;
+  margin: auto;
+  position: absolute;
+  bottom: 1em;
+  z-index: 1;
+  left: 0;
+  right: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -74,6 +74,7 @@ h3 {
         background-size: 150px 150px;
         bottom: 0px;
         left: 0px;
+        z-index: 2;
     }
     &:after {
         background-image: url(../svg/corner-blue.svg);
@@ -107,5 +108,55 @@ h3 {
         background-size: 100px;
         top: 0px;
         right: -5px;
+    }
+}
+
+.btn {
+    &-light {
+        color: #fff;
+        font-family: $secondary-font;
+        border: 2px #fff solid;
+        background-color: $brand-color !important;
+        border-radius: 0;
+        &:hover {
+            background-color: #fff !important;
+            color: $brand-color;
+            border-color: #fff;
+        }
+    }
+    &-outline-light {
+        border-radius: 0;
+        border-width: 2px;
+        font-family: $secondary-font;
+    }
+    &-primary {
+        color: $brand-color;
+        font-family: $secondary-font;
+        border: 2px $brand-color solid;
+        background-color: #fff !important;
+        border-radius: 0;
+        &:hover {
+            background-color: $brand-color !important;
+            color: #fff;
+            border-color: $brand-color;
+        }
+    }
+}
+.hero {
+    &-header {
+        background-image: url('../img/hero.jpg');
+        background-position: center;
+        height: 70vh;
+    }
+    &-block {
+        background-color: rgba(61, 96, 172, .8);
+        padding: 1em 2em;
+        width: 70%;
+        margin: auto;
+        position:absolute;
+        bottom: 1em;
+        z-index: 1;
+        left: 0;
+        right: 0;
     }
 }
