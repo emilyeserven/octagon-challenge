@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'plakette_serial-regular';
-    src: url('plakette_serial-regular-webfont.woff2') format('woff2'),
-         url('plakette_serial-regular-webfont.woff') format('woff');
+    src: url('../plakette_serial-regular-webfont.woff2') format('woff2'),
+         url('../plakette_serial-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -9,7 +9,28 @@
 $brand-color: #3D60AC;
 $brand-font: 'plakette_serial-regular';
 
+$brand-color-dark: #041B4B;
+
 .navbar {
     background-color: $brand-color;
     color: #fff;
+    &-brand {
+        font-family: $brand-font;
+        font-size: 4.5em;
+        text-transform: uppercase;
+        line-height: .8;
+        letter-spacing: 2px;
+        img {
+            margin-right: -20px;
+            height: .72em;
+        }
+    }
+}
+.bg {
+    &-brand {
+        background-color: $brand-color;
+    }
+    &-brand-dark {
+        background-color: $brand-color-dark;
+    }
 }
