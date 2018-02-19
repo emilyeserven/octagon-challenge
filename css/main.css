@@ -16,7 +16,7 @@
   letter-spacing: 2px;
 }
 .navbar-brand img {
-  margin-right: -20px;
+  margin-right: -15px;
   height: .72em;
 }
 
@@ -25,6 +25,30 @@
 }
 .bg-brand-dark {
   background-color: #041B4B;
+}
+
+.jumbotron {
+  position: relative;
+}
+.jumbotron:before {
+  background-image: url(../svg/corner.svg);
+  content: '';
+  width: 150px;
+  position: absolute;
+  height: 150px;
+  background-size: 150px 150px;
+  bottom: 0px;
+  left: 0px;
+}
+.jumbotron:after {
+  background-image: url(../svg/corner-blue.svg);
+  content: '';
+  width: 250px;
+  position: absolute;
+  height: 250px;
+  background-size: 250px 250px;
+  top: 0px;
+  right: 0px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -21,7 +21,7 @@ $brand-color-dark: #041B4B;
         line-height: .8;
         letter-spacing: 2px;
         img {
-            margin-right: -20px;
+            margin-right: -15px;
             height: .72em;
         }
     }
@@ -32,5 +32,29 @@ $brand-color-dark: #041B4B;
     }
     &-brand-dark {
         background-color: $brand-color-dark;
+    }
+}
+
+.jumbotron {
+    position:relative;
+    &:before {
+        background-image: url(../svg/corner.svg);
+        content: '';
+        width: 150px;
+        position: absolute;
+        height: 150px;
+        background-size: 150px 150px;
+        bottom: 0px;
+        left: 0px;
+    }
+    &:after {
+        background-image: url(../svg/corner-blue.svg);
+        content: '';
+        width: 250px;
+        position: absolute;
+        height: 250px;
+        background-size: 250px 250px;
+        top: 0px;
+        right: 0px;
     }
 }
