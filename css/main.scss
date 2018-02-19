@@ -7,9 +7,24 @@
 }
 
 $brand-color: #3D60AC;
-$brand-font: 'plakette_serial-regular';
+$brand-font: 'plakette_serial-regular', sans-serif;
+
+$secondary-font: 'Fira Sans', sans-serif;
 
 $brand-color-dark: #041B4B;
+
+h2 {
+    font-family: $brand-font;
+    font-size: 3.5em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: $secondary-font;
+    font-style: italic;
+    font-weight:500;
+}
 
 .navbar {
     background-color: $brand-color;

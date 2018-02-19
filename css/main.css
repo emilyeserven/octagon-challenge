@@ -4,12 +4,25 @@
   font-weight: normal;
   font-style: normal;
 }
+h2 {
+  font-family: "plakette_serial-regular", sans-serif;
+  font-size: 3.5em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Fira Sans", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+}
+
 .navbar {
   background-color: #3D60AC;
   color: #fff;
 }
 .navbar-brand {
-  font-family: "plakette_serial-regular";
+  font-family: "plakette_serial-regular", sans-serif;
   font-size: 4.5em;
   text-transform: uppercase;
   line-height: .8;
