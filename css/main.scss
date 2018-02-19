@@ -4,5 +4,12 @@
          url('plakette_serial-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
 
+$brand-color: #3D60AC;
+$brand-font: 'plakette_serial-regular';
+
+.navbar {
+    background-color: $brand-color;
+    color: #fff;
 }
