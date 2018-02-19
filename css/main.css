@@ -9,6 +9,19 @@ h2 {
   font-size: 3.5em;
   letter-spacing: 1px;
   text-transform: uppercase;
+  /*&.blue-arrow {
+      background-image: url(../svg/arrow-blue.svg);
+      content: '';
+      width: 100px;
+      position: relative;
+      height: 100px;
+      background-size: 100px;
+      display:inline-block;
+  } */
+}
+h2 img {
+  margin-top: -9px;
+  margin-left: -10px;
 }
 
 h3 {
