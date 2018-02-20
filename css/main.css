@@ -47,9 +47,19 @@ h5 {
   line-height: .8;
   letter-spacing: 2px;
 }
+.navbar-brand:hover {
+  color: #041B4B !important;
+}
 .navbar-brand img {
   margin-right: -15px;
   height: .72em;
+}
+.navbar .nav-item {
+  font-weight: 500;
+  color: #fff !important;
+}
+.navbar .nav-item:hover {
+  color: #8FA6D6 !important;
 }
 
 .footer-brand {
@@ -62,7 +72,7 @@ h5 {
 }
 .footer-brand:hover {
   text-decoration: none;
-  color: #fff;
+  color: #8FA6D6;
 }
 .footer-brand img {
   margin-right: -5px;
@@ -71,8 +81,18 @@ h5 {
 footer svg {
   color: #fff;
 }
+footer svg:hover path {
+  fill: #8FA6D6;
+}
 footer ul {
   list-style-type: square;
+}
+footer a {
+  color: #fff;
+}
+footer a:hover {
+  color: #8FA6D6;
+  text-decoration: none;
 }
 
 .bg-brand {

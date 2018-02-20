@@ -56,9 +56,19 @@ h5 {
         text-transform: uppercase;
         line-height: .8;
         letter-spacing: 2px;
+        &:hover {
+            color: $brand-color-dark !important;
+        }
         img {
             margin-right: -15px;
             height: .72em;
+        }
+    }
+    .nav-item {
+        font-weight:500;
+        color: #fff !important;
+        &:hover {
+            color: $brand-color-light !important;
         }
     }
 }
@@ -72,7 +82,7 @@ h5 {
         color: #fff;
         &:hover {
             text-decoration:none;
-            color: #fff;
+            color: $brand-color-light;
         }
         img {
             margin-right: -5px;
@@ -82,9 +92,19 @@ h5 {
 footer {
     svg {
         color: #fff;
+        &:hover path {
+            fill: $brand-color-light;
+        }
     }
     ul {
         list-style-type: square;
+    }
+    a {
+        color: #fff;
+        &:hover {
+            color: $brand-color-light;
+            text-decoration: none;
+        }
     }
 }
 .bg {
