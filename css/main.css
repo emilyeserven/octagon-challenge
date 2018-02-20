@@ -83,6 +83,7 @@ footer ul {
 
 .jumbotron {
   position: relative;
+  border-radius: 0;
 }
 .jumbotron:before {
   background-image: url(../svg/corner.svg);
@@ -188,6 +189,7 @@ footer ul {
   bottom: initial;
   width: 100%;
   padding: initial;
+  background-color: #3D60AC;
 }
 .hero-block.mobile-caption h2 {
   font-size: 3em;

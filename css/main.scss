@@ -97,6 +97,7 @@ footer {
 
 .jumbotron {
     position:relative;
+    border-radius: 0;
     &:before {
         background-image: url(../svg/corner.svg);
         content: '';
@@ -202,6 +203,7 @@ footer {
             bottom: initial;
             width: 100%;
             padding: initial;
+            background-color: $brand-color;
             h2 {
                 font-size:3em;
             }
