@@ -1,5 +1,5 @@
 <!doctype html>
-<htm lang="">
+<html lang="">
     <head>
         <meta charset="utf-8">
         <title>ServenEmily Octagon Challenge</title>
@@ -7,45 +7,46 @@
         <link rel="stylesheet" href="css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500i" rel="stylesheet">
         <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <nav class="navbar sticky-top navbar-expand-lg navbar-dark px-0 mx-0">
-            <div class="container px-0">
-          <a class="navbar-brand" href="#">
-            <img src="svg/logo.svg" width="100" height="90" class="d-inline-block align-top" alt="">
-            EXCELSIOR
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-item nav-link active" href="#">Highlights <span class="sr-only">(current)</span></a>
-              <a class="nav-item nav-link" href="#">Team</a>
-              <a class="nav-item nav-link" href="#">News</a>
-              <a class="nav-item nav-link" href="#">Contact</a>
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+            <div class="container">
+              <a class="navbar-brand" href="index.html">
+                <img src="svg/logo.svg" width="100" height="90" class="d-inline-block align-top" alt="">
+                EXCELSIOR
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-item nav-link active" href="index.html#highlights">Highlights <span class="sr-only">(current)</span></a>
+                  <a class="nav-item nav-link" href="index.html#team">Team</a>
+                  <a class="nav-item nav-link" href="index.html#news">News</a>
+                  <a class="nav-item nav-link" href="contact.html">Contact</a>
+                </div>
+              </div>
             </div>
-          </div>
-      </div>
         </nav>
         <div class="jumbotron hero-header subpage mb-0">
         </div>
         <div class="container py-5">
-            <div class="row my-3">
+            <div class="row col-10 offset-1 offset-lg-0 col-lg-4 my-3 px-0">
                 <h2 class="blue-arrow">Contact <img src="svg/arrow-blue.svg" width="20px" height="40px" /></h2>
             </div>
-                <div class="row">
-                    <div class="col-4 pl-0">
+                <div class="row px-lg-3">
+                    <div class="col-10 offset-1 offset-lg-0 col-lg-4 pl-lg-0">
                         <br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eget leo ut ligula rhoncus luctus ut quis ipsum. Duis ligula justo, pharetra nec lorem in, sodales condimentum sapien. Morbi finibus mattis velit ac volutpat. Nam eleifend faucibus blandit. Maecenas placerat elit sit amet lacus convallis tincidunt.
                     </div>
-                    <div class="col-8">
+                    <div class="col-10 offset-1 offset-lg-0 col-lg-8 mt-5 mt-lg-0">
                         <form>
                             <div class="form-group row">
-                                <div class="col-6">
+                                <div class="col-12 col-sm-6">
                                     <label for="firstName">First Name</label>
                                     <input type="text" class="form-control" placeholder="&nbsp;" required pattern="[a-zA-Z]+" id="firstName">
                                 </div>
-                                <div class="col-6">
+                                <div class="col-12 col-sm-6">
                                     <label for="lastName">Last Name</label>
                                     <input type="text" class="form-control" placeholder="&nbsp;" required pattern="[a-zA-Z-']+" id="lastName">
                                 </div>
@@ -57,11 +58,11 @@
                                 </div>
                             </div>
                             <div class="form-group row">
-                                <div class="col-6">
+                                <div class="col-12 col-sm-6">
                                     <label for="zipCode">ZIP Code</label>
                                     <input type="text" class="form-control" required pattern="[0-9]{5}" id="zipCode" placeholder="#####">
                                 </div>
-                                <div class="col-6">
+                                <div class="col-12 col-sm-6">
                                     <label for="state">State</label>
                                     <select class="form-control custom-select" id="state" required="">
                                         <option value="" disabled selected>Select State</option>
@@ -132,21 +133,21 @@
         <footer class="container-fluid bg-brand-dark text-light py-5">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-4">
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-6 col-md-4 px-sm-0 px-md-1 my-4 my-md-0">
                         <a class="footer-brand" href="#">
                           <img src="svg/logo.svg" width="50" height="30" class="d-inline-block align-top" alt="">
                           EXCELSIOR
                         </a>
                     </div>
-                    <div class="col-4">
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-6 col-md-4 px-sm-0 px-md-1 my-4 my-md-0">
                         <ul>
-                            <li>Highlights</li>
-                            <li>Team</li>
-                            <li>News</li>
-                            <li>Contact</li>
+                            <li><a href="index.html#highlights">Highlights</a></li>
+                            <li><a href="index.html#team">Team</a></li>
+                            <li><a href="index.html#news">News</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
-                    <div class="col-4 text-right">
+                    <div class="col-10 offset-1 offset-sm-0 col-sm-12 col-md-4 px-sm-0 px-md-1  my-4 my-md-0 text-md-right">
                         <a href="http://discord.gg/nyxl"><i class="fab fa-discord fa-2x"></i></a>&nbsp;
                         <a href="https://www.facebook.com/NYXL"><i class="fab fa-facebook-square fa-2x"></i></a>&nbsp;
                         <a href="https://www.instagram.com/NYXL"><i class="fab fa-instagram fa-2x"></i></a>&nbsp;
