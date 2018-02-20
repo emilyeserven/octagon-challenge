@@ -38,6 +38,7 @@ h5 {
 .navbar {
   background-color: #3D60AC;
   color: #fff;
+  border-bottom: 2px #fff solid;
 }
 .navbar-brand {
   font-family: "plakette_serial-regular", sans-serif;
@@ -160,6 +161,19 @@ footer ul {
   color: #fff;
   border-color: #3D60AC;
 }
+.btn-submit {
+  color: #fff;
+  font-family: "Fira Sans", sans-serif;
+  border: 2px #3D60AC solid;
+  background-color: #3D60AC !important;
+  border-radius: 0;
+  width: 100%;
+}
+.btn-submit:hover {
+  background-color: #fff !important;
+  color: #3D60AC;
+  border-color: #3D60AC;
+}
 
 .hero-header {
   background-image: url("../img/herosub.jpg");
@@ -171,7 +185,7 @@ footer ul {
   background-image: url("../img/hero.jpg");
   background-position: center;
   background-size: cover;
-  height: 50vh;
+  height: 40vh;
 }
 .hero-block {
   background-color: rgba(61, 96, 172, 0.8);
@@ -196,12 +210,32 @@ footer ul {
 }
 
 input.form-control {
-  border: 2px #8FA6D6 solid;
+  border: 2px #333 solid;
   border-radius: 0;
 }
 input.form-control:focus {
   border-color: #8FA6D6;
   box-shadow: 0 0 0 0.2rem rgba(61, 96, 172, 0.8);
+}
+input.form-control:placeholder-shown {
+  border-color: #3D60AC !important;
+}
+input.form-control:focus:invalid {
+  border-color: orange;
+}
+input.form-control:invalid {
+  border-color: red;
+}
+input.form-control:focus:valid, input.form-control:valid {
+  border-color: green;
+}
+
+select.custom-select {
+  border: 2px #3D60AC solid;
+  border-radius: 0;
+}
+select.custom-select:valid {
+  border-color: green;
 }
 
 @media (max-width: 576px) {
@@ -210,13 +244,13 @@ input.form-control:focus {
   }
 
   h2 {
-    font-size: 6em;
+    font-size: 5em;
   }
   h2 img {
-    margin-top: -15px;
+    margin-top: -10px;
     margin-left: -20px;
-    width: 35px;
-    height: 70px;
+    width: 25px;
+    height: 50px;
   }
 }
 /*
@@ -229,5 +263,11 @@ input.form-control:focus {
   }
 }
 */
+a.anchor {
+  position: relative;
+  display: block;
+  top: -90px;
+  visibility: hidden;
+}
 
 /*# sourceMappingURL=main.css.map */

@@ -49,6 +49,7 @@ h5 {
 .navbar {
     background-color: $brand-color;
     color: #fff;
+    border-bottom: 2px #fff solid;
     &-brand {
         font-family: $brand-font;
         font-size: 4.5em;
@@ -174,7 +175,21 @@ footer {
             border-color: $brand-color;
         }
     }
+    &-submit {
+        color: #fff;
+        font-family: $secondary-font;
+        border: 2px $brand-color solid;
+        background-color: $brand-color !important;
+        border-radius: 0;
+        width: 100%;
+        &:hover {
+            background-color: #fff !important;
+            color: $brand-color;
+            border-color: $brand-color;
+        }
+    }
 }
+
 .hero {
     &-header {
         background-image: url('../img/herosub.jpg');
@@ -186,7 +201,7 @@ footer {
         background-image: url('../img/hero.jpg');
         background-position: center;
         background-size:cover;
-        height: 50vh;
+        height: 40vh;
     }
     &-block {
         background-color: $brand-color-opacity;
@@ -211,11 +226,31 @@ footer {
     }
 }
 input.form-control {
-    border: 2px $brand-color-light solid;
+    border: 2px #333 solid;
     border-radius: 0;
     &:focus {
         border-color: $brand-color-light;
         box-shadow: 0 0 0 0.2rem $brand-color-opacity;
+    }
+    &:placeholder-shown {
+        border-color: $brand-color !important;
+    }
+    &:focus:invalid {
+        border-color: orange;
+    }
+    &:invalid {
+        border-color: red;
+    }
+    &:focus:valid, &:valid {
+        border-color: green;
+    }
+}
+
+select.custom-select {
+    border: 2px #3D60AC solid;
+    border-radius: 0;
+    &:valid {
+        border-color: green;
     }
 }
 
@@ -226,12 +261,12 @@ input.form-control {
         }
     }
     h2 {
-        font-size: 6em;
+        font-size: 5em;
         img {
-            margin-top: -15px;
+            margin-top: -10px;
             margin-left: -20px;
-            width: 35px;
-            height: 70px;
+            width: 25px;
+            height: 50px;
         }
     }
 }
@@ -245,3 +280,9 @@ input.form-control {
   }
 }
 */
+a.anchor {
+    position:relative;
+    display:block;
+    top: -90px;
+    visibility:hidden;
+}
